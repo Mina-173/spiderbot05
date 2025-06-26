@@ -21,11 +21,19 @@
     </picture>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
      
-    <body style="background-color:rgb(188, 218, 181);">
+    <script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 
-    
+// Create gradient
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "ligh pink");
+grd.addColorStop(1, "ligh green");
 
-</body>
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+</script>
 
 </div>
 </body>
